@@ -1,25 +1,25 @@
-export default function contact() {
+export default function loadContact() {
   const content = document.querySelector("#content");
 
-  const homeDiv = document.createElement("div");
-  homeDiv.classList.add("home-page");
+  const contactDiv = document.createElement("div");
+  contactDiv.classList.add("contact-page");
 
   const headline = document.createElement("h1");
-  headline.textContent = "U Zlatého Burgeru";
+  headline.textContent = "Kontaktujte Nás";
 
-  const subline = document.createElement("p");
-  subline.textContent = "Nejšťavnatější burgery v celém městě.";
-  const hours = document.createElement("div");
-  hours.classList.add("hours-card");
-  hours.innerHTML = `
-    <h3>Otevírací doba</h3>
-    <p>Po - Pá: 11:00 - 22:00</p>
-    <p>So - Ne: 12:00 - 23:00</p>
+  const info = document.createElement("div");
+  info.classList.add("contact-card");
+  info.innerHTML = `
+    <h3>Kde nás najdete</h3>
+    <p>📍 Náměstí Přemysla Otakara II. 12, Vysoké Mýto</p>
+    <p>📞 Rezervace: +420 777 123 456</p>
+    <p>✉️ E-mail: info@zlatyburger.cz</p>
+
+    <h3 style="margin-top: 15px;">Rozvoz</h3>
+    <p>Objednávky bereme i přes Wolt a Bolt Food do okruhu 15 km.</p>
   `;
 
-  homeDiv.appendChild(headline);
-  homeDiv.appendChild(subline);
-  homeDiv.appendChild(hours);
-
-  content.appendChild(homeDiv);
+  contactDiv.appendChild(headline);
+  contactDiv.appendChild(info);
+  content.appendChild(contactDiv);
 }

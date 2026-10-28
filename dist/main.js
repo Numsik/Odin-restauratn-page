@@ -110,13 +110,23 @@ eval("{\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleEle
 
 /***/ },
 
+/***/ "./src/contact.js"
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadContact)\n/* harmony export */ });\nfunction loadContact() {\r\n  const content = document.querySelector(\"#content\");\r\n\r\n  const contactDiv = document.createElement(\"div\");\r\n  contactDiv.classList.add(\"contact-page\");\r\n\r\n  const headline = document.createElement(\"h1\");\r\n  headline.textContent = \"Kontaktujte Nás\";\r\n\r\n  const info = document.createElement(\"div\");\r\n  info.classList.add(\"contact-card\");\r\n  info.innerHTML = `\r\n    <h3>Kde nás najdete</h3>\r\n    <p>📍 Náměstí Přemysla Otakara II. 12, Vysoké Mýto</p>\r\n    <p>📞 Rezervace: +420 777 123 456</p>\r\n    <p>✉️ E-mail: info@zlatyburger.cz</p>\r\n\r\n    <h3 style=\"margin-top: 15px;\">Rozvoz</h3>\r\n    <p>Objednávky bereme i přes Wolt a Bolt Food do okruhu 15 km.</p>\r\n  `;\r\n\r\n  contactDiv.appendChild(headline);\r\n  contactDiv.appendChild(info);\r\n  content.appendChild(contactDiv);\r\n}\n\n//# sourceURL=webpack://webpackprogram/./src/contact.js?\n}");
+
+/***/ },
+
 /***/ "./src/index.js"
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _loadHome_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadHome.js */ \"./src/loadHome.js\");\n\r\n\r\n\r\n\r\ndocument.getElementById(\"home-btn\").addEventListener(\"click\", () => {\r\n    (0,_loadHome_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n});\r\n\r\n(0,_loadHome_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://webpackprogram/./src/index.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _loadHome_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./loadHome.js */ \"./src/loadHome.js\");\n/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact.js */ \"./src/contact.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu.js */ \"./src/menu.js\");\n\r\n\r\n\r\n\r\n\r\n\r\ndocument.getElementById(\"home-btn\").addEventListener(\"click\", () => {\r\n    (0,_loadHome_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n});\r\ndocument.getElementById(\"menu-btn\").addEventListener(\"click\", () => {\r\n    (0,_menu_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\r\n});\r\ndocument.getElementById(\"contact-btn\").addEventListener(\"click\", () => {\r\n    (0,_contact_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n});\r\n\r\n(0,_loadHome_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://webpackprogram/./src/index.js?\n}");
 
 /***/ },
 
@@ -127,6 +137,16 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _st
 (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadHome)\n/* harmony export */ });\nfunction loadHome() {\r\n  const content = document.querySelector(\"#content\");\r\n\r\n  const homeDiv = document.createElement(\"div\");\r\n  homeDiv.classList.add(\"home-page\");\r\n\r\n  const headline = document.createElement(\"h1\");\r\n  headline.textContent = \"U Zlatého Burgeru\";\r\n\r\n  const subline = document.createElement(\"p\");\r\n  subline.textContent = \"Nejšťavnatější burgery v celém městě.\";\r\n  const hours = document.createElement(\"div\");\r\n  hours.classList.add(\"hours-card\");\r\n  hours.innerHTML = `\r\n    <h3>Otevírací doba</h3>\r\n    <p>Po - Pá: 11:00 - 22:00</p>\r\n    <p>So - Ne: 12:00 - 23:00</p>\r\n  `;\r\n\r\n  homeDiv.appendChild(headline);\r\n  homeDiv.appendChild(subline);\r\n  homeDiv.appendChild(hours);\r\n\r\n  content.appendChild(homeDiv);\r\n}\n\n//# sourceURL=webpack://webpackprogram/./src/loadHome.js?\n}");
+
+/***/ },
+
+/***/ "./src/menu.js"
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadMenu)\n/* harmony export */ });\nfunction loadMenu() {\r\n  const content = document.querySelector(\"#content\");\r\n\r\n  const menuDiv = document.createElement(\"div\");\r\n  menuDiv.classList.add(\"menu-page\");\r\n\r\n  const headline = document.createElement(\"h1\");\r\n  headline.textContent = \"Naše Menu\";\r\n\r\n  const itemsList = document.createElement(\"div\");\r\n  itemsList.classList.add(\"menu-items\");\r\n\r\n  const meals = [\r\n    {\r\n      name: \"Classic Smash Burger\",\r\n      desc: \"150g hovězího krku, čedar, kyselá okurka, karamelizovaná cibulka a domácí BBQ omáčka.\",\r\n      price: \"195 Kč\"\r\n    },\r\n    {\r\n      name: \"Bacon & Jalapeño King\",\r\n      desc: \"150g hovězího, dvojitý čedar, křupavá slanina, nakládané jalapeños a pálivá majonéza.\",\r\n      price: \"225 Kč\"\r\n    },\r\n    {\r\n      name: \"Crispy Halloumi Burger\",\r\n      desc: \"Grilovaný cyperský sýr Halloumi, avokádo, polníček a lanýžová majonéza.\",\r\n      price: \"185 Kč\"\r\n    },\r\n    {\r\n      name: \"Domácí belgické hranolky\",\r\n      desc: \"Smažené na hovězím loji s hrubou mořskou solí a tatarkou.\",\r\n      price: \"65 Kč\"\r\n    }\r\n  ];\r\n\r\n  meals.forEach(meal => {\r\n    const card = document.createElement(\"div\");\r\n    card.classList.add(\"menu-card\");\r\n\r\n    const title = document.createElement(\"h3\");\r\n    title.textContent = `${meal.name} — ${meal.price}`;\r\n\r\n    const text = document.createElement(\"p\");\r\n    text.textContent = meal.desc;\r\n\r\n    card.appendChild(title);\r\n    card.appendChild(text);\r\n    itemsList.appendChild(card);\r\n  });\r\n\r\n  menuDiv.appendChild(headline);\r\n  menuDiv.appendChild(itemsList);\r\n  content.appendChild(menuDiv);\r\n}\n\n//# sourceURL=webpack://webpackprogram/./src/menu.js?\n}");
 
 /***/ }
 
