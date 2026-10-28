@@ -5,3 +5,7 @@ body{
 #content{
     padding: 20px;
 }
+button{
+    width: 150px;
+    height: 75px;
+}
