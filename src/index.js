@@ -1,0 +1,1 @@
+console.log("Webpack úspěšně zkompiloval kód!");
